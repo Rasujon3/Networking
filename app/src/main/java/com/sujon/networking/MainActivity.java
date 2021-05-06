@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 myTextView.setText(error.toString());
             }
         });
-        queue.add(request);
+//        queue.add(request);
+        MySingleton.getInstance(this).addToRequestQueue(request);
     }
 }
